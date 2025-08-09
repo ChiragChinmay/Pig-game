@@ -54,7 +54,7 @@ btnHold.addEventListener("click", function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
 
-    if (scores[activePlayer] >= 100) {
+    if (scores[activePlayer] >= 5) {
       playing = false;
       document
         .querySelector(`.player--${activePlayer}`)
@@ -85,4 +85,3 @@ btnNew.addEventListener("click", function () {
   player0El.classList.add("player--active");
   player1El.classList.remove("player--active");
 });
-
